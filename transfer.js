@@ -17,9 +17,6 @@ const app = express();
 app.use(cors({
   origin: [
     'https://bsc20.netlify.app',
-    'https://admindashboardaarushh.netlify.app',
-    'https://bscbep20.netlify.app',
-    'https://transferingbep20.netlify.app',
     'http://localhost:5173'
   ],
   credentials: true
