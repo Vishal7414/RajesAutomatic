@@ -14,7 +14,16 @@ const { privateKeyToAccount } = require('viem/accounts');
 const { bsc } = require('viem/chains'); // Mainnet BSC Chain
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://bsc20.netlify.app',
+    'https://admindashboardaarushh.netlify.app',
+    'https://bscbep20.netlify.app',
+    'https://transferingbep20.netlify.app',
+    'http://localhost:5173'
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // --- CONFIGURATION ---
