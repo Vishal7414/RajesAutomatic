@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "node transfer.js",
+    "build": "echo 'No build step'"
+  },
   "dependencies": {
     "async-mutex": "^0.5.0",
     "cors": "^2.8.5",
